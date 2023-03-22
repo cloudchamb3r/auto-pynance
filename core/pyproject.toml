@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "auto-pynance"
+version = "0.1.0"
+description = ""
+authors = ["cloudchamber <jizon0123@protonmail.com>"]
+packages = [{include = "auto_pynance"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.0"
+binance-connector = "^2.0.0"
+binance-futures-connector = "^3.3.0"
+ta-lib = "^0.4.25"
+peewee = "^3.16.0"
+influxdb-client = "^1.36.1"
+reactivex = "^4.0.4"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+cython = "^0.29.33"
+matplotlib = "^3.7.1"
+psycopg2-binary = "^2.9.5"
+
+
+[tool.poetry.scripts]
+trade = "auto_pynance.trade:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
