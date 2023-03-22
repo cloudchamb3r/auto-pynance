@@ -2,7 +2,7 @@
 
 import numpy as np 
 import pandas as pd 
-import auto_pynance.metrics.ta as ta
+import auto_pynance.ta as ta
 import matplotlib.pyplot as plt
 
 stock_data = pd.read_csv("./usdm-data/BTCUSDT-1m-2021-01-01.csv")

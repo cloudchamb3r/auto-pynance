@@ -7,22 +7,20 @@ packages = [{include = "auto_pynance"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+cython = "^0.29.33"
 python-dotenv = "^1.0.0"
-binance-connector = "^2.0.0"
-binance-futures-connector = "^3.3.0"
+python-binance = "^1.0.17"
 ta-lib = "^0.4.25"
-peewee = "^3.16.0"
-influxdb-client = "^1.36.1"
+numpy = "^1.24.2"
 reactivex = "^4.0.4"
 pandas = "^1.5.3"
-numpy = "^1.24.2"
-cython = "^0.29.33"
 matplotlib = "^3.7.1"
+peewee = "^3.16.0"
 psycopg2-binary = "^2.9.5"
 
 
 [tool.poetry.scripts]
-trade = "auto_pynance.trade:main"
+trade = "auto_pynance.trade:init"
 
 [build-system]
 requires = ["poetry-core"]

@@ -11,3 +11,7 @@ print(epoch_now)
 print(datetime.fromtimestamp(epoch_now))
 
 epoch_milis_now = epoch_now * 1000
+
+
+import auto_pynance.candle as candle
+
